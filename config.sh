@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Device
-export FOX_BRANCH="fox_11.0"
-export DT_LINK="https://github.com/Jprimero15/android_device_xiaomi_olive -b fox_11"
+export FOX_BRANCH="fox_9.0"
+export DT_LINK="https://github.com/Jprimero15/android_device_xiaomi_olive -b fox_9.0"
 
 export DEVICE="olive"
 export OEM="xiaomi"
