@@ -33,6 +33,10 @@ if [ -z "$TIMEOUT" ];then
     TIMEOUT=20160
 fi
 
+curl -F "document=@$FILENAME" --form-string "caption=<b>Build Status: <code>TEST Build </code></b>
+<b>Date: <code>$(date '+%B %d, %Y.') </code></b>
+<b>Time: <code>$(date +'%r')</code></b>" "https://api.telegram.org/bot${TG_TOKEN}/sendDocument?chat_id=${TG_CHAT_ID}&parse_mode=html"
+
 # Upload to WeTransfer
 # NOTE: the current Docker Image, "registry.gitlab.com/sushrut1101/docker:latest", includes the 'transfer' binary by Default
 transfer wet $FILENAME > link.txt || { echo "ERROR: Failed to Upload the Build!" && exit 1; }
