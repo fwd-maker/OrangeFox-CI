@@ -4,7 +4,7 @@
 export FOX_BRANCH="fox_11.0"
 export DT_LINK="https://github.com/Jprimero15/recovery_device_xiaomi_olive -b olivelite-11"
 
-export DEVICE="olive"
+export DEVICE="olivelite"
 export OEM="xiaomi"
 export TARGET="recoveryimage"
 
